@@ -1,24 +1,65 @@
-BoxLayoutExample
+StackLayoutExample
+
+
+
+
+<StackLayoutExample>:
+    # left-right: (lr), right-left: (rl), top-bottom: (tb), bottom-top: (bt)
+    #orientation: 'lr-bt'
+    # Button:
+    #    text: "Crazy Button"
+    #   size_hint: .2, .2
+    #Button:
+    #    text: "Insane Button"
+    #    size_hint: .2, .2
+    #Button:
+    #    text: "Schizophrenic Button"
+    #    size_hint: .2, .2
+    #Button:
+    #    text: "Ridiculous Button"
+    #    size_hint: .2, .2
+    #Button:
+    #    text: "Absurd Button"
+    #    size_hint: .2, .2
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <BoxLayoutExample>:
-    orientation: 'horizontal'
+    orientation: 'vertical'
     Button:
         text: "Button A"
         background_color: 1, 0, 0, 1
-        size_hint: 0.5,1
+        size_hint: 1,1
     Button:
         text: "Button B"
         background_color: 0, 1, 0, 1
-        size_hint: 2,1
+        size_hint: 1,1
     Button:
         text: "Button C"
         background_color: 0, 0, 1, 1
-        size_hint: 0.5, 0.5
-        # horizontal positions: x(left), center_x, right
-        # vertical positions: y(bottom), center_y, top
+        size_hint: 1, 1
+        # horizontal positions: x (left), center_x, right
+        # vertical positions: y (bottom), center_y, top
         pos_hint: {"center_y":1}
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            text: "Crazy Button"
+        Button:
+            text: "Crazy Button 2"
+        Button:
+            text: "Crazy Button 3"
 
 
 
