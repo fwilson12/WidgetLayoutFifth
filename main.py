@@ -20,7 +20,7 @@ class StackLayoutExample(StackLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.orientation = 'lr-tb'
-        cb = Button(text='Crazy Button',size_hint='.5,.5')
+        cb = Button(text='Crazy Button',size_hint='.5,.50')
 
 WidgetLayoutApp().run()
 
