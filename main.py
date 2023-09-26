@@ -24,6 +24,13 @@ class StackLayoutExample(StackLayout):
             b = Button(text= letter, size_hint=(.15,.15))
             self.add_widget(b)
 
+
+class LayoutAssignment(BoxLayout):
+    pass
+
+
+
+
 class GridLayoutExample(GridLayout):
     pass
 
