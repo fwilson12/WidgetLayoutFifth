@@ -1,9 +1,9 @@
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
+from kivy.uix.gridlayout import GridLayout
 from kivy.uix.stacklayout import StackLayout
 from kivy.uix.widget import Widget
-
 
 
 class BoxLayoutExample(BoxLayout):
@@ -16,12 +16,15 @@ class WidgetLayoutApp(App):
     pass
 
 class StackLayoutExample(StackLayout):
-
+    pass
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.orientation = 'lr-tb'
-        cb = Button(text='Crazy Button',size_hint='.5,.50')
+        for letter in 'qwertyuiopasdfghjklzxcvbnm0123456789':
+            b = Button(text= letter, size_hint=(.15,.15))
+            self.add_widget(b)
+
+class GridLayoutExample(GridLayout):
+    pass
 
 WidgetLayoutApp().run()
-
-

@@ -1,14 +1,34 @@
-StackLayoutExample
+ScrollViewExample
+
+<ScrollViewExample@ScrollView>:
+    StackLayoutExample:
+        size_hint: 1, 2
+        height: self.minimum_height
 
 
 
+<GridLayoutExample>:
+    # define rows &  cols
+    rows: 2
+    Button:
+        text: "Crazy Button"
+    Button:
+        text: "Ridiculous Button"
+    Button:
+        text: "Insane Button"
+    Button:
+        text: "Schizophrenic  Button"
+    Button:
+        text: "Absurd Button"
 
-<StackLayoutExample>:
-    # left-right: (lr), right-left: (rl), top-bottom: (tb), bottom-top: (bt)
+
+
+#<StackLayoutExample>:
+    #left-right: (lr), right-left: (rl), top-bottom: (tb), bottom-top: (bt)
     #orientation: 'lr-bt'
-    # Button:
+    #Button:
     #    text: "Crazy Button"
-    #   size_hint: .2, .2
+    #    size_hint: .2, .2
     #Button:
     #    text: "Insane Button"
     #    size_hint: .2, .2
