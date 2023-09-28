@@ -2,10 +2,21 @@ LayoutAssignment
 
 <LayoutAssignment>:
     orientation: 'vertical'
-    spacing: '5dp'
+    spacing: '15dp'
+    padding: '15dp'
+
     Label:
         text: 'Kivy Layout'
-        size_hint: 1, .2
+        size_hint: 1, .25
+        color: (0,0,0,1)
+        font_size: 50
+        background_color: (1,1,1,1)
+        canvas.before:
+            Color:
+                rgba: self.background_color
+            Rectangle:
+                size: self.size
+                pos: self.pos
     BoxLayout:
         spacing: '5dp'
         orientation: 'horizontal'
@@ -14,57 +25,83 @@ LayoutAssignment
             orientation:'horizontal'
             Button:
                 text: "Button A"
+                background_color: .85,.4,.8,1
             Button:
                 text: "Button B"
+                background_color: .85,.4,.8,1
         BoxLayout:
             spacing: '5dp'
             orientation: 'vertical'
             Button:
                 text: 'Button C'
+                background_color: .48,.635,1,1
             Button:
                 text: 'Button D'
+                background_color: .48,.635,1,1
+                size_hint: 1, .8
             Button:
                 text: 'Button E'
+                background_color: .48,.635,1,1
+                size_hint: 1, .6
         GridLayout:
             spacing: '5dp'
             rows: 6
             columns: 3
+            size_hint: 1.6, 1
             Button:
                 text: '1'
+                background_color: .1,1,.1,1
             Button:
                 text: '2'
+                background_color: .1,1,.1,1
             Button:
                 text: '3'
+                background_color: .1,1,.1,1
             Button:
                 text: '4'
+                background_color: .1,1,.1,1
             Button:
                 text: '5'
+                background_color: .1,1,.1,1
             Button:
                 text: '6'
+                background_color: .1,1,.1,1
             Button:
                 text: '7'
+                background_color: .1,1,.1,1
             Button:
                 text: '8'
+                background_color: .1,1,.1,1
             Button:
                 text: '9'
+                background_color: .1,1,.1,1
             Button:
                 text: '10'
+                background_color: .1,1,.1,1
             Button:
                 text: '11'
+                background_color: .1,1,.1,1
             Button:
                 text: '12'
+                background_color: .1,1,.1,1
             Button:
                 text: '13'
+                background_color: .1,1,.1,1
             Button:
                 text: '14'
+                background_color: .1,1,.1,1
             Button:
                 text: '15'
+                background_color: .1,1,.1,1
             Button:
                 text: '16'
+                background_color: .1,1,.1,1
             Button:
                 text: '17'
+                background_color: .1,1,.1,1
             Button:
                 text: '18'
+                background_color: .1,1,.1,1
 
 
 
